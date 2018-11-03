@@ -10,6 +10,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CameraPage } from '../pages/camera/camera';
+import { HTTP } from '@ionic-native/http';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CameraPage } from '../pages/camera/camera';
     StatusBar,
     SplashScreen,
     Camera,
+    HTTP,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

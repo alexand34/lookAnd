@@ -37,6 +37,10 @@
           "target": "Package",
           "version": "[2.1.2, )"
         },
+        "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+          "target": "Package",
+          "version": "[3.2.0, )"
+        },
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
