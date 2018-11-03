@@ -1,0 +1,4 @@
+E:\Test\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.0\LookAnd.Web.csprojAssemblyReference.cache
+E:\Test\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.0\LookAnd.Web.csproj.CoreCompileInputs.cache
+E:\Test\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.0\LookAnd.Web.AssemblyInfoInputs.cache
+E:\Test\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.0\LookAnd.Web.AssemblyInfo.cs
