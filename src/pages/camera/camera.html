@@ -1,25 +1,20 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
+<ion-content>
+  <ion-card>
+    <ion-card-content>
 
-<ion-content padding>
+    <button ion-button icon-right (click)="onTakePicture()">
+      Take Picture <ion-icon name="camera"></ion-icon>
+    </button>
 
-  <h3>Welcome to your first Ionic app!</h3>
+    <img *ngIf="image"
+      [src]="domSanitizer.bypassSecurityTrustUrl(image)" />
 
-  <p>
-    This starter project is our way of helping you get a functional app running in record time.
-  </p>
-  <p>
-    Follow along on the tutorial section of the Ionic docs!
-  </p>
-  <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
-  </p>
-
+  </ion-card-content>
+</ion-card>
 </ion-content>
