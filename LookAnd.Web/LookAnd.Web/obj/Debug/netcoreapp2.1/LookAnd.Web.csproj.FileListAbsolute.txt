@@ -11,3 +11,4 @@ E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.
 E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.RazorTargetAssemblyInfo.cache
 E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.dll
 E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.pdb
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.csprojAssemblyReference.cache

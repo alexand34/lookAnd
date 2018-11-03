@@ -1,16 +1,73 @@
 import { Component, OnInit } from '@angular/core';
-declare function escape(s: string): string;
-declare function unescape(s: string): string;
-@Component({
-  selector: 'camera-ionic',
-  templateUrl: 'camera.html'
-})
-export class CameraPage implements OnInit{
-  private image = "data:image/jpeg;base64,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…";
-  constructor() {
-  }
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { ModalController, NavParams } from 'ionic-angular';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+import {
+    CameraPreview,
+    CameraPreviewPictureOptions,
+    CameraPreviewOptions,
+    CameraPreviewDimensions,
+} from '@ionic-native/camera-preview';
 
-  ngOnInit() {
-    
-  }
+@Component({
+    selector: 'camera-ionic',
+    templateUrl: 'camera.html',
+})
+export class CameraPage implements OnInit {
+    picture: any;
+    cameraPreviewOpts: CameraPreviewOptions = {
+        x: 0,
+        y: 0,
+        width: window.screen.width,
+        height: window.screen.height,
+        camera: 'rear',
+        tapPhoto: true,
+        previewDrag: true,
+        toBack: true,
+        alpha: 1,
+    };
+    constructor(public modalCtrl: ModalController, private camera: CameraPreview, private http: HttpClient) {}
+    ngOnInit() {
+        // start camera
+        this.camera.startCamera(this.cameraPreviewOpts).then(
+            res => {
+                console.log(res);
+            },
+            err => {
+                console.log(err);
+            },
+        );
+    }
+
+    presentProfileModal() {
+        let profileModal = this.modalCtrl.create({ userId: 8675309 });
+        profileModal.present();
+    }
+
+    takePicture() {
+        // take a picture
+        this.camera.takePicture(this.cameraPreviewOpts).then(
+            imageData => {
+                this.picture = 'data:image/jpeg;base64,' + imageData;
+                let imgString = this.picture;
+                this.http
+                    .post('http://lookandweb.azurewebsites.net/api/values', '"' + imgString + '"', {
+                        headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json' },
+                    })
+                    .subscribe(
+                        data => {
+                            console.log(data['_body']);
+                            this.presentProfileModal();
+                        },
+                        error => {
+                            console.log(error);
+                        },
+                    );
+            },
+            err => {
+                console.log(err);
+                this.picture = 'assets/img/test.jpg';
+            },
+        );
+    }
 }

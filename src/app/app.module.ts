@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { Camera } from '@ionic-native/camera';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import {SelectMalePage} from '../pages/select-male/select-male';
@@ -13,8 +12,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CameraPage } from '../pages/camera/camera';
 import { HTTP } from '@ionic-native/http';
 import { FileTransfer } from '@ionic-native/file-transfer';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+import { ModalController } from 'ionic-angular'
 
 @NgModule({
   declarations: [
@@ -42,6 +43,10 @@ import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, Camer
   providers: [
     StatusBar,
     SplashScreen,
+    HttpClientModule,
+    Camera,
+    CameraPreview,
+    ModalController,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

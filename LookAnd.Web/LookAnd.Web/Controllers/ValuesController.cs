@@ -40,13 +40,10 @@ namespace LookAnd.Web.Controllers
       string visionApiEndPoint = "https://westeurope.api.cognitive.microsoft.com";
       HttpClient client = new HttpClient();
       client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", visionApiKey);
-      string requestParameters = "visualFeatures=Categories,Description,Color&language=en";
+      string requestParameters = "visualFeatures=Categories,Description,Tags,Color&language=en";
       string uri = visionApiEndPoint + "/vision/v1.0/analyze" + "?" + requestParameters;
       HttpResponseMessage response;
-      string converted = value.Replace('-', '+');
-      converted = converted.Replace('_', '/');
-      converted = converted.Replace("\t", string.Empty);
-      converted = converted.Replace("\n", string.Empty);
+      string converted = value.Split(',')[1];
       try
       {
         var img = this.Base64ToBytes(converted);
