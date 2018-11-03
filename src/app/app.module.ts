@@ -16,6 +16,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
 import { ModalController } from 'ionic-angular'
+import {ModalCameraComponent} from "../components/modal-camera/modal-camera";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ModalController } from 'ionic-angular'
     ItemDetailsPage,
     ListPage,
     CameraPage,
-    SelectMalePage
+    SelectMalePage,
+    ModalCameraComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { ModalController } from 'ionic-angular'
     ItemDetailsPage,
     ListPage,
     CameraPage,
-    SelectMalePage
+    SelectMalePage,
+    ModalCameraComponent
   ],
   providers: [
     StatusBar,

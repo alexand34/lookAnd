@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { ModalCameraComponent } from "../../components/modal-camera/modal-camera";
 
 /**
  * Generated class for the SelectMalePage page.
@@ -15,11 +16,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SelectMalePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SelectMalePage');
   }
 
+  openModal() {
+    let modal = this.modalCtrl.create(ModalCameraComponent, {title: "Hello World"});
+    modal.present();
+  }
 }
