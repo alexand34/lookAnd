@@ -12,7 +12,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CameraPage } from '../pages/camera/camera';
 import { HTTP } from '@ionic-native/http';
 import { FileTransfer } from '@ionic-native/file-transfer';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule, HttpClient } from '@angular/common/http'; 
 import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
 
 @NgModule({
@@ -39,6 +39,7 @@ import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, Camer
   providers: [
     StatusBar,
     SplashScreen,
+    HttpClientModule,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
