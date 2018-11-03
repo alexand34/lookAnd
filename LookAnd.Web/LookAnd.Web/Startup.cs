@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,9 +22,17 @@ namespace LookAnd.Web
 
     public IConfiguration Configuration { get; }
 
+    public IHostingEnvironment Env { get; set; }
+
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+      services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+      {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+      }));
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
     }
 
@@ -39,7 +47,7 @@ namespace LookAnd.Web
       {
         app.UseHsts();
       }
-
+      app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader());
       app.UseHttpsRedirection();
       app.UseMvc();
     }

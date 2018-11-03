@@ -1,19 +1,19 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "E:\\Test\\LookAnd.Web\\LookAnd.Web\\LookAnd.Web.csproj",
+    "projectUniqueName": "E:\\Projects\\lookAnd\\LookAnd.Web\\LookAnd.Web\\LookAnd.Web.csproj",
     "projectName": "LookAnd.Web",
-    "projectPath": "E:\\Test\\LookAnd.Web\\LookAnd.Web\\LookAnd.Web.csproj",
-    "outputPath": "E:\\Test\\LookAnd.Web\\LookAnd.Web\\obj\\",
+    "projectPath": "E:\\Projects\\lookAnd\\LookAnd.Web\\LookAnd.Web\\LookAnd.Web.csproj",
+    "outputPath": "E:\\Projects\\lookAnd\\LookAnd.Web\\LookAnd.Web\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
-      "netcoreapp2.0"
+      "netcoreapp2.1"
     ],
     "frameworks": {
-      "netcoreapp2.0": {
+      "netcoreapp2.1": {
         "projectReferences": {}
       }
     },
@@ -24,11 +24,13 @@
     }
   },
   "frameworks": {
-    "netcoreapp2.0": {
+    "netcoreapp2.1": {
       "dependencies": {
         "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
           "target": "Package",
-          "version": "(, )"
+          "version": "[2.1.1, )",
+          "autoReferenced": true
         },
         "Microsoft.AspNetCore.Razor.Design": {
           "suppressParent": "All",
@@ -42,8 +44,12 @@
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
-          "version": "[2.0.0, )",
+          "version": "[2.1.0, )",
           "autoReferenced": true
+        },
+        "System.Drawing.Common": {
+          "target": "Package",
+          "version": "[4.5.1, )"
         }
       },
       "imports": [

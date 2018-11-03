@@ -1,0 +1,13 @@
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\bin\Debug\netcoreapp2.1\LookAnd.Web.deps.json
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\bin\Debug\netcoreapp2.1\LookAnd.Web.runtimeconfig.json
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\bin\Debug\netcoreapp2.1\LookAnd.Web.runtimeconfig.dev.json
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\bin\Debug\netcoreapp2.1\LookAnd.Web.dll
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\bin\Debug\netcoreapp2.1\LookAnd.Web.pdb
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.csproj.CoreCompileInputs.cache
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.RazorAssemblyInfo.cache
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.RazorAssemblyInfo.cs
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.AssemblyInfoInputs.cache
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.AssemblyInfo.cs
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.RazorTargetAssemblyInfo.cache
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.dll
+E:\Projects\lookAnd\LookAnd.Web\LookAnd.Web\obj\Debug\netcoreapp2.1\LookAnd.Web.pdb

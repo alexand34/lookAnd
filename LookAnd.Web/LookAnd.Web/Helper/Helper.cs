@@ -1,3 +1,7 @@
+using System;
+using System.IO;
+using System.Text;
+
 namespace LookAnd.Web.Helper
 {
    public static class ProgramHelper
@@ -7,7 +11,7 @@ namespace LookAnd.Web.Helper
      /// </summary>
      /// <param name="imageFilePath">The image file to read.</param>
      /// <returns>The byte array of the image data.</returns>
-     public static byte[] GetImageAsByteArray(string imageFilePath)
+     private static byte[] GetImageAsByteArray(string imageFilePath)
      {
          FileStream fileStream = new FileStream(imageFilePath, FileMode.Open, FileAccess.Read);
          BinaryReader binaryReader = new BinaryReader(fileStream);
