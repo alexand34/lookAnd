@@ -3,16 +3,22 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>Capture outwear</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
-    <ion-card-content>
-    <button ion-button icon-right (click)="onTakePicture()">
-      Take Picture <ion-icon name="camera"></ion-icon>
-    </button>
-  </ion-card-content>
-</ion-card>
+  <ion-content>
+    <div id="ionball"></div>
+    <ion-fab left bottom small>
+      <button (click)="takePicture()" ion-fab color="light">
+        <ion-icon name="ios-close-circle"></ion-icon>
+      </button>
+    </ion-fab>
+    <ion-fab right bottom small>
+      <button (click)="takePicture()" ion-fab color="light">
+        <ion-icon name="archive"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-content>
 </ion-content>

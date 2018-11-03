@@ -30,8 +30,9 @@ namespace LookAnd.Web
       services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
       {
         builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials();
       }));
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
     }
@@ -47,7 +48,7 @@ namespace LookAnd.Web
       {
         app.UseHsts();
       }
-      app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyHeader());
+      app.UseCors("MyPolicy");
       app.UseHttpsRedirection();
       app.UseMvc();
     }
