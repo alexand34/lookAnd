@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { ModalController, NavParams } from 'ionic-angular';
-import { Camera, CameraOptions } from '@ionic-native/camera';
-import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
-
+import { ModalController, NavParams, ViewController } from 'ionic-angular';
+import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions } from '@ionic-native/camera-preview';
 @Component({
   selector: 'camera-ionic',
   templateUrl: 'camera.html'
@@ -23,7 +21,8 @@ export class CameraPage implements OnInit {
   };
   constructor(public modalCtrl: ModalController,
     private camera: CameraPreview,
-    private http: HttpClient) {
+    private http: HttpClient,
+    public viewCtrl : ViewController) {
   }
   ngOnInit() {
     // start camera
@@ -37,8 +36,8 @@ export class CameraPage implements OnInit {
   }
 
   presentProfileModal() {
-    let profileModal = this.modalCtrl.create({ userId: 8675309 });
-    profileModal.present();
+    const modal = this.modalCtrl.create('ModalBasicPage');
+    modal.present();
   }
 
   takePicture() {
@@ -49,6 +48,7 @@ export class CameraPage implements OnInit {
       this.http.post("http://lookandweb.azurewebsites.net/api/values", '"' + imgString + '"', { headers: {'Access-Control-Allow-Origin': '*', 'Content-Type' : 'application/json'}})
       .subscribe(data => {
         console.log(data['_body']);
+        //this.camera.stopCamera();
         this.presentProfileModal();
        }, error => {
         console.log(error);

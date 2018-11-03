@@ -3,37 +3,28 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
-import { File } from '@ionic-native/file';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CameraPage } from '../pages/camera/camera';
-import { HTTP } from '@ionic-native/http';
-import { FileTransfer } from '@ionic-native/file-transfer';
-import { HttpClientModule, HttpClient } from '@angular/common/http'; 
-import { Camera, CameraOptions } from '@ionic-native/camera';
-import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+import { HttpClientModule } from '@angular/common/http'; 
+import { Camera } from '@ionic-native/camera';
+import { CameraPreview } from '@ionic-native/camera-preview';
 import { ModalController } from 'ionic-angular' 
 @NgModule({
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
     CameraPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
-    ListPage,
     CameraPage
   ],
   providers: [
