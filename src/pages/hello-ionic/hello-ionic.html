@@ -1,24 +1,40 @@
 <div class="background-top">
   <ion-header>
     <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Hello Ionic</ion-title>
+      <ion-title style="color: black">Add your clothes</ion-title>
     </ion-navbar>
   </ion-header>
-  
-  
-  <ion-content padding>
-    <h3>Welcome to your first Ionic app!</h3>
-    <p>
-      This starter project is our way of helping you get a functional app running in record time.
-    </p>
-    <p>
-      Follow along on the tutorial section of the Ionic docs!
-    </p>
-    <p>
-      <button ion-button color="primary" menuToggle>Toggle Menu</button>
-    </p>
+  <ion-content>
+    <ion-item>
+      <ion-label>
+          <ion-icon name="logo-twitter"></ion-icon> Tops
+      </ion-label>
+    </ion-item>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <ion-img width="160" height="120" src="https://s3-alpha.figma.com/img/b162/335a/40465e95a14da99c5fd7abae667788c5"></ion-img>
+          </ion-col>
+          <ion-col col-6>
+              <ion-img width="160" height="120" src="https://s3-alpha.figma.com/img/69d6/867c/526cc256fa9391f66fb88843dec61ef9"></ion-img>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-6>
+                <ion-img width="160" height="120" src="https://s3-alpha.figma.com/img/7fc9/7da3/08e35bb47870f885cc9950705ad01bd4"></ion-img>
+            </ion-col>
+            <ion-col col-6>
+                <ion-img width="160" height="120" src="https://s3-alpha.figma.com/img/2da2/2c1b/5355d1d4bbbce45e22613837a9734796"></ion-img>
+            </ion-col>
+          </ion-row>
+      </ion-grid>
+      <ion-item>
+          <ion-label class="alignme">
+              <button ion-button bottom menuToggle >
+                  <ion-icon name="logo-twitter">
+                    </ion-icon>
+                </button>
+          </ion-label>
+      </ion-item>
   </ion-content>
 </div>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {ViewController} from 'ionic-angular'
-import { normalizeURL } from 'ionic-angular';
 
 /**
  * Generated class for the ModalCameraComponent component.
@@ -17,6 +16,8 @@ export class ModalCameraComponent {
   constructor(public modalView: ViewController) {
     console.log('Hello ModalCameraComponent Component');
   }
+
+
 
   closeModal() {
     this.modalView.dismiss();
