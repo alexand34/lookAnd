@@ -3,7 +3,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
+//import { ItemDetailsPage } from '../pages/item-details/item-details';
 import {SelectMalePage} from '../pages/select-male/select-male';
 import { File } from '@ionic-native/file';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -21,7 +21,7 @@ import {ModalCameraComponent} from "../components/modal-camera/modal-camera";
   declarations: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
+  //  ItemDetailsPage,
     CameraPage,
     SelectMalePage,
     ModalCameraComponent
@@ -35,7 +35,7 @@ import {ModalCameraComponent} from "../components/modal-camera/modal-camera";
   entryComponents: [
     MyApp,
     HelloIonicPage,
-    ItemDetailsPage,
+    //ItemDetailsPage,
     CameraPage,
     SelectMalePage,
     ModalCameraComponent
