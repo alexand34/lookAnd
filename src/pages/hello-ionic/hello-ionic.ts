@@ -11,7 +11,7 @@ export class HelloIonicPage {
     constructor(public modalView: ModalController) {}
 
     openModalWindow() {
-        let _modal = this.modalView.create(ModalCameraComponent, { image: 'assets/imgs/backgroundImg.jpg' });
+        let _modal = this.modalView.create(ModalCameraComponent, { image: 'https://static4.cilory.com/273124-large_default/nologo-navy-casual-shirt.jpg' });
         _modal.present();
     }
 }
