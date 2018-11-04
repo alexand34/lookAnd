@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { ModalCameraComponent } from "../../components/modal-camera/modal-camera";
-
+//import BackgroundColorImg from "../../assets/imgs/BackgroundColorImg"; 
 /**
  * Generated class for the SelectMalePage page.
  *
@@ -23,8 +23,10 @@ export class SelectMalePage {
     console.log('ionViewDidLoad SelectMalePage');
   }
 
+
+
   openModal() {
-    let modal = this.modalCtrl.create(ModalCameraComponent, {title: "Hello World"});
+    let modal = this.modalCtrl.create(ModalCameraComponent, {image: "assets/imgs/backgroundImg.jpg"});
     modal.present();
   }
 }

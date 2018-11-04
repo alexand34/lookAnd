@@ -3,6 +3,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+
 import {SelectMalePage} from '../pages/select-male/select-male';
 import { File } from '@ionic-native/file';
 import { StatusBar } from '@ionic-native/status-bar';

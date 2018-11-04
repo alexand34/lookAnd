@@ -1,7 +1,6 @@
 <!-- Generated template for the ModalCameraComponent component -->
 <div class="background-top">
-  <div>
-      <img [src]="normalizeUrl(image)">
+  <div class="modal-wrapper" [ngStyle]="{ background: 'url(../../' + image + ')' }">
   </div>
   <ion-content>
     <ion-fab left top small>
