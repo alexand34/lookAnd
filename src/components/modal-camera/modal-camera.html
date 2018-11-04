@@ -1,10 +1,18 @@
 <!-- Generated template for the ModalCameraComponent component -->
 <div class="background-top">
+  <div>
+      <img [src]="normalizeUrl(image)">
+  </div>
   <ion-content>
-    {{title}} - ;)
-  
-    <button (click)="closeModal()">
-      Close Button ?
-    </button>
+    <ion-fab left top small>
+      <button (click)="closeModal()" ion-fab color="light">
+        <ion-icon name="ios-close-circle"></ion-icon>
+      </button>
+    </ion-fab>
+  </ion-content>
+  <ion-content>
+  </ion-content>
+  <ion-content bottom>
+    <button ion-button bottom block color="orange" menuToggle>Add to warderobe</button>
   </ion-content>
 </div>

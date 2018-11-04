@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {ViewController} from 'ionic-angular'
+import { normalizeURL } from 'ionic-angular';
 
 /**
  * Generated class for the ModalCameraComponent component.
@@ -15,7 +16,6 @@ export class ModalCameraComponent {
   text: string;
   constructor(public modalView: ViewController) {
     console.log('Hello ModalCameraComponent Component');
-    this.text = 'Hello World';
   }
 
   closeModal() {
