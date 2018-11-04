@@ -4,6 +4,8 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CameraPage } from '../pages/camera/camera';
+import { SelectMalePage } from '../pages/select-male/select-male';
+
 
 
 @Component({
@@ -26,8 +28,9 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Home', component: HelloIonicPage },
-      { title: 'Camera', component: CameraPage }
+      { title: 'Hello Ionic', component: HelloIonicPage },
+      { title: 'Camera', component: CameraPage },
+      { title: "Select Male", component: SelectMalePage }
     ];
   }
 
