@@ -16,6 +16,7 @@ import { ModalCameraComponent } from '../../components/modal-camera/modal-camera
 })
 export class CameraPage implements OnInit {
     picture: any;
+    arrayOfTags: any;
     cameraPreviewOpts: CameraPreviewOptions = {
         x: 0,
         y: 0,
@@ -29,6 +30,8 @@ export class CameraPage implements OnInit {
     };
     constructor(public modalCtrl: ModalController, private camera: CameraPreview, private http: HttpClient) {}
     ngOnInit() {
+
+  this.arrayOfTags = ["white", "t-shirt", "black", "jacket", "woman", "dressing","men"];
         // start camera
         this.camera.startCamera(this.cameraPreviewOpts).then(
             res => {
@@ -62,6 +65,7 @@ export class CameraPage implements OnInit {
                     })
                     .subscribe(
                         data => {
+                            alert(JSON.stringify({"key": data }));
                             console.log(data['_body']);
                             this.openModal(data['_body'], imgString);
                         },

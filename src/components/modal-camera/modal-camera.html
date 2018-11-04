@@ -1,5 +1,6 @@
 <!-- Generated template for the ModalCameraComponent component -->
 <div class="background-top">
+<!-- <<<<<<< HEAD
     <ion-content>
        <ion-img width="200" height="200" src="https://static4.cilory.com/273124-large_default/nologo-navy-casual-shirt.jpg"></ion-img>
     </ion-content>
@@ -14,4 +15,23 @@
   <ion-content bottom>
     <button ion-button bottom block color="orange" menuToggle>Add to warderobe</button>
   </ion-content>
+</div>
+======= -->
+    <ion-content [ngStyle]="{'background-image': 'url(https://static4.cilory.com/273124-large_default/nologo-navy-casual-shirt.jpg)', 'width': '100%', 'height': '100%', 'background-repeat': 'no-repeat', 'background-size': '70%', 'background-position':'center'}" >
+         <ion-fab left top small>
+        <button (click)="closeModal()" ion-fab color="light">
+          <ion-icon name="ios-close-circle"></ion-icon>
+        </button>
+      </ion-fab>
+      <div class="custom-grid-direction-end">
+        <div class="tags-body-wrapper">
+          <span class="tag-label"><span class="logo-prefix">& </span>T-Shirt </span>
+          <span class="tag-label"><span class="logo-prefix">& </span>Casual </span>
+          <span class="tag-label"><span class="logo-prefix">& </span>Men </span>
+        </div>
+        <div class="button-footer-wrapper">
+          <button block ion-button bottom color="yellow" class="button-lookend">Add to warderobe</button>
+        </div>
+      </div>
+    </ion-content>
 </div>

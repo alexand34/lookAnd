@@ -1,9 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
 import { Nav, NavController, Platform } from 'ionic-angular';
 import { CameraPage } from '../../pages/camera/camera';
+import { ModalController } from 'ionic-angular';
+// Modals component
+import { ModalCameraComponent } from '../../components/modal-camera/modal-camera';
+
 @Component({
-  selector: 'page-hello-ionic',
-  templateUrl: 'hello-ionic.html'
+    selector: 'page-hello-ionic',
+    templateUrl: 'hello-ionic.html',
 })
 export class HelloIonicPage {
   @ViewChild(Nav) nav: Nav;
