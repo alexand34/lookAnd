@@ -5,7 +5,6 @@ import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import {SelectMalePage} from '../pages/select-male/select-male';
-import { ListPage } from '../pages/list/list';
 import { File } from '@ionic-native/file';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +22,6 @@ import {ModalCameraComponent} from "../components/modal-camera/modal-camera";
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage,
     CameraPage,
     SelectMalePage,
     ModalCameraComponent
@@ -38,7 +36,6 @@ import {ModalCameraComponent} from "../components/modal-camera/modal-camera";
     MyApp,
     HelloIonicPage,
     ItemDetailsPage,
-    ListPage,
     CameraPage,
     SelectMalePage,
     ModalCameraComponent

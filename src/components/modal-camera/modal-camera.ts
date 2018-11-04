@@ -12,9 +12,7 @@ import {ViewController} from 'ionic-angular'
   templateUrl: 'modal-camera.html'
 })
 export class ModalCameraComponent {
-
   text: string;
-
   constructor(public modalView: ViewController) {
     console.log('Hello ModalCameraComponent Component');
     this.text = 'Hello World';

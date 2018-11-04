@@ -8,6 +8,7 @@ import {
     CameraPreviewOptions,
     CameraPreviewDimensions,
 } from '@ionic-native/camera-preview';
+import { ModalCameraComponent } from '../../components/modal-camera/modal-camera';
 
 @Component({
     selector: 'camera-ionic',
@@ -44,6 +45,11 @@ export class CameraPage implements OnInit {
         profileModal.present();
     }
 
+    openModal(data) {
+      let modal = this.modalCtrl.create(ModalCameraComponent, {title: "Hello World", data: data});
+      modal.present();
+    }
+
     takePicture() {
         // take a picture
         this.camera.takePicture(this.cameraPreviewOpts).then(
@@ -57,7 +63,7 @@ export class CameraPage implements OnInit {
                     .subscribe(
                         data => {
                             console.log(data['_body']);
-                            this.presentProfileModal();
+                            this.openModal(data['_body']);
                         },
                         error => {
                             console.log(error);
