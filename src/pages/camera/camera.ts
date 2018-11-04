@@ -45,8 +45,8 @@ export class CameraPage implements OnInit {
         profileModal.present();
     }
 
-    openModal(data) {
-      let modal = this.modalCtrl.create(ModalCameraComponent, {title: "Hello World", data: data});
+    openModal(data,img) {
+      let modal = this.modalCtrl.create(ModalCameraComponent, {image: img, data: data});
       modal.present();
     }
 
@@ -63,7 +63,7 @@ export class CameraPage implements OnInit {
                     .subscribe(
                         data => {
                             console.log(data['_body']);
-                            this.openModal(data['_body']);
+                            this.openModal(data['_body'], imgString);
                         },
                         error => {
                             console.log(error);
